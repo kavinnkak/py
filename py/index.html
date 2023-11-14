@@ -1,0 +1,17 @@
+from tkinter import *
+
+def update_label():
+    label.config(text=e.get())
+
+root = Tk()
+
+e = Entry(root, width=50, fg="blue", bg="green")
+e.pack()
+
+update_button = Button(root, text="Update Label", command=update_label)
+update_button.pack()
+
+label = Label(root, text="")
+label.pack()
+
+root.mainloop()
